@@ -2,6 +2,7 @@ import Main from '@/pages/Main'
 import PostPage from '@/pages/PostPage'
 import About from '@/pages/About'
 import SinglePostPage from '@/pages/SinglePostPage'
+import PostPageWithVuex from '@/pages/PostPageWithVuex'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [{
@@ -19,6 +20,10 @@ const routes = [{
     {
         path: '/posts/:id',
         component: SinglePostPage
+    },
+    {
+        path: '/store',
+        component: PostPageWithVuex
     }
 ]
 
