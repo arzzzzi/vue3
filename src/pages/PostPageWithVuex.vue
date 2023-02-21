@@ -6,10 +6,10 @@
        <!-- <h1>{{ $store.state.isAuth ? 'Пользователь авторизован' : 'Авторизуйтесь' }}</h1>  -->
        <h1>Страница с постами</h1> 
        <!-- <h1>{{ $store.getters.doubleLikes }}</h1>  -->
-       <div>
+       <!-- <div>
         <my-button @click="$store.commit('incrementLikes')">Like</my-button>
         <my-button @click="$store.commit('decrementLikes')">Dislike</my-button>
-      </div> 
+      </div>  -->
        <my-input  
            v-model="searchQuery" 
            placeholder="Поиск..." 

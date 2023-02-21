@@ -16,7 +16,7 @@ export const postModule = {
     }),
     getters: {
         sortedPosts(state) {
-            return [...state.posts].sort((post1, post2) => post1[state.selectedSort] && post1[state.selectedSort].localeCompare(post2[state.selectedSort]))
+            return [...state.posts].sort((post1, post2) => post1[state.selectedSort]?.localeCompare(post2[state.selectedSort]))
         },
         sortedAndSearchedPosts(state, getters) {
             return getters.sortedPosts.filter(post => post.title.toLowerCase().includes(state.searchQuery.toLowerCase()))
